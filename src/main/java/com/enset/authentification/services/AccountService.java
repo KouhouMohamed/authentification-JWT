@@ -10,7 +10,7 @@ import java.util.Collection;
 public interface AccountService {
     public UserResponse addUser(UserRequest user);
     public RoleResponse addRole(RoleRequest role);
-    public UserResponse addRoleToUser(Long userId, Long roleId);
+    public UserResponse addRoleToUser(String username, String roleName);
     public UserResponse getUserByName(String username);
     public Collection<UserResponse> getAllUsers();
     public Collection<RoleResponse> getAllRoles();
